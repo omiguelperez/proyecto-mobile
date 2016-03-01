@@ -10,7 +10,87 @@
 	<script src="jquerymobile/jquerymobile.min.js"></script>
 </head>
 <body>
-	
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h1>Home</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a class="ui-btn-active" href="#" data-href="#home">Home</a></li>
+					<li><a href="#" data-href="#buscar">Buscar</a></li>
+					<li><a href="#" data-href="#grito">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<h1>Bienvenido a Mejorando el JQuery Mobile</h1>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
+
+	<!-- PAGE -->
+
+	<div data-role="page" id="buscar">
+		<div data-role="header">
+			<h1>Buscar</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-href="#home">Home</a></li>
+					<li><a class="ui-btn-active" href="#" data-href="#buscar">Buscar</a></li>
+					<li><a href="#" data-href="#grito">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<input type="text" id="cajatexto">
+				</div>
+				<div class="ui-block-b">
+					<a href="#" data-ref="#" id="botonbuscar" data-icon="check" data-role="button">Buscar</a>
+				</div>
+			</fieldset>
+			<div id="mensajes"></div>
+			<div data-role="listview" data-inset="true">
+				<li>Item 1</li>
+				<li><a href="#">Item 2</a></li>
+				<li>Item 3 <span class="ui-li-count">234</span></li>
+				<li data-role="list-divider">Item 4</li>
+				<li>Item 5</li>
+			</div>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
+
+	<!-- PAGE -->
+
+	<div data-role="page" id="grito">
+		<div data-role="header">
+			<h1>Grito</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-href="#home">Home</a></li>
+					<li><a href="#" data-href="#buscar">Buscar</a></li>
+					<li><a class="ui-btn-active" href="#" data-href="#grito">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<h1>Grito</h1>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
 
 	<script src="js/codigo.js"></script>
 </body>
